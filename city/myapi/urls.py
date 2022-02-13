@@ -1,5 +1,5 @@
 from django.urls import  path
-from . import views
+from . import views, get_streets
 
 
 urlpatterns = [
@@ -14,5 +14,7 @@ urlpatterns = [
         path('shop/', views.ShopCreateView.as_view()),
         path('shop/list/', views.ShopListView.as_view()),
         path('shop/<int:pk>/', views.ShopDetailView.as_view()),
+
+        path('import/streets/<city_name>/', get_streets.get_all_streets),#импорт города и его улиц
 
 ]

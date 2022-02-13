@@ -88,3 +88,4 @@ class ShopDetailView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = ShopDetailSerializer
     queryset = Shop.objects.all()
 
+
