@@ -1,5 +1,5 @@
 Предварительно требуется установить:
--Django==4.0.2
+-Django==4.0.2<br>
 -djangorestframework==3.13.1
 -django-filter==21.1
 -requests==2.27.1
